@@ -1,6 +1,6 @@
 const ejsMate = require("ejs-mate");
 const express = require("express");
-const ExpressError = require("./utils/ExpressError");
+const Errorhandle = require("./utils/Errorhandle");
 const mongoose = require("mongoose");
 const methodOverride = require("method-override");
 const wrapAsync = require("./utils/wrapAsync");
@@ -98,11 +98,7 @@ app.delete(
 );
 
 app.all("*", (req, res, next) => {
-  try {
-    next(new ExpressHandler("Page Not Found", 404));
-  } catch (error) {
-    console.log(error);
-  }
+  next(new Errorhandle("Page Not Found", 404));
 });
 
 app.use((err, req, res, next) => {
