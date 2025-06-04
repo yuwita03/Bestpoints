@@ -100,7 +100,6 @@ async function seedPlaces() {
       location: "Pantai Sanur, Denpasar, Bali",
       image: "https://picsum.photos/500/500",
     },
-
     {
       title: "Candi Borobudur",
       price: 25000,
@@ -139,6 +138,22 @@ async function seedPlaces() {
       description:
         "Pulau yang terletak di ujung barat Indonesia dengan keindahan bawah laut yang luar biasa",
       location: "Pulau Weh, Sabang, Aceh",
+      image: "https://picsum.photos/500/500",
+    },
+    {
+      title: "Taman Safari Indonesia",
+      price: 0,
+      description:
+        "Taman hiburan keluarga dengan berbagai satwa liar di Cisarua, Bogor",
+      location: "Taman Safari Indonesia, Cisarua, West Java",
+      image: "https://picsum.photos/500/500",
+    },
+    {
+      title: "Gunung Merbabu",
+      price: 50000,
+      description:
+        "Gunung yang terletak di Jawa Tengah dengan pemandangan matahari terbit yang indah",
+      location: "Gunung Merbabu, Central Java",
       image: "https://picsum.photos/500/500",
     },
     {
